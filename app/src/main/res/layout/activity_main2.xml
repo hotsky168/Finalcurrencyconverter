@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".Main2Activity">
+
+    <Button
+        android:id="@+id/convert1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:layout_toEndOf="@+id/sgd"
+        android:background="@android:color/holo_blue_light"
+        android:text="Convert"
+        android:textColor="@android:color/black"
+        tools:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/more"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="214dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="input"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/sgd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/input1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:text="USD"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        tools:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sgd"
+        android:layout_marginBottom="146dp"
+        android:text="SGD"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/output1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_alignTop="@+id/usd"
+        android:text="output"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/d" />
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/convert1"
+        android:layout_marginEnd="92dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="More"
+        android:textSize="18sp" />
+
+</RelativeLayout>
